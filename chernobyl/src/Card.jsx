@@ -1,8 +1,21 @@
 
-import "Card.css"
-function Card (){
+import "./Card.css"
+
+function Card ({suit, value, color}){
     return(
-        <div>Does this work</div>
+        <div className="Card box">
+            <div className={`card ${color}`}>
+                <div className="corner top-left">
+                    {value}<br />{suit}
+                </div>
+                <div className="suit">
+                    {suit}
+                </div>
+                <div className="corner bottom-right">
+                    {value}<br />{suit}
+                </div>
+            </div>
+        </div>
     );
 }
 

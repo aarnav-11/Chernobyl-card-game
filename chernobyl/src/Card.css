@@ -1,0 +1,53 @@
+.card {
+  /* Playing card layout */
+  width: 180px;
+  height: 260px;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  position: relative;
+}
+
+.card .corner {
+  position: absolute;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.card .corner.top-left {
+  top: 0.5rem;
+  left: 0.5rem;
+  text-align: left;
+}
+
+.card .corner.bottom-right {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  text-align: right;
+  transform: rotate(180deg);
+}
+
+.card .suit {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Color helpers for suits, if you use them as classes */
+.card.red {
+  color: #c21807;
+}
+
+.card.black {
+  color: #111;
+}
