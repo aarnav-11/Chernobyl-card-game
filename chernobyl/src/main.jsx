@@ -6,8 +6,8 @@ import Card from './Card.jsx'
 
 createRoot(document.getElementById('root')).render(
   <>
-  <Card suit="♥" value="9" color="red"/>
-  <App />
+    <Card suit="♥" value="9" color="red"/>
+    <App />
   </>
   
 )
